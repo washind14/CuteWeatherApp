@@ -7,14 +7,14 @@ document.getElementById('getWeatherBtn').addEventListener('click', function () {
       .then(response => response.json())
       .then(data => {
           if (data.cod === 200) {
-            // const weatherImageCode = data.weather[0].icon;
-            // const weatherImageUrl = `https://openweathermap.org/img/wn/${weatherImageCode}@2x.png`;
+            
             const weatherCondition = data.weather[0].main.toLowerCase();
             const weatherImageUrl = `./images/${weatherCondition}.png`;
+            const roundTemp = Math.round(data.main.temp);
 
               document.getElementById('cityName').innerText = data.name;
               document.getElementById('weatherImage').src = weatherImageUrl;
-              document.getElementById('temperature').innerText = `${data.main.temp}°F`;
+              document.getElementById('temperature').innerText = `${roundTemp}°F`;
               document.getElementById('description').innerText = `${data.weather[0].description}`;
               document.getElementById('humidity').innerText = `Humidity: ${data.main.humidity}%`;
           } else {
@@ -22,4 +22,5 @@ document.getElementById('getWeatherBtn').addEventListener('click', function () {
           }
       })
       .catch(error => console.error('Error fetching weather data:', error));
+
 });
