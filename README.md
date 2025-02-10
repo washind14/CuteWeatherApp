@@ -18,6 +18,9 @@ CuteWeatherApp is a lightweight and aesthetically pleasing weather application t
 - **OpenWeather API**: Fetch real-time weather data
 
 ## 📸 Screenshots
+<img width="300" height="400" alt="Screenshot 2025-02-10 at 12 00 51 PM" src="https://github.com/user-attachments/assets/a0ad7d19-475e-4120-bb4d-cafe1ff601ed" />
+<img width="300" height="400" alt="Screenshot 2025-02-10 at 12 13 55 PM" src="https://github.com/user-attachments/assets/612a2de8-e3bc-40fb-950b-9e6717afef0c" />
+<img width="300" height="400" alt="Chicago_Screenshot 2025-02-10 at 11 59 31 AM" src="https://github.com/user-attachments/assets/be356db4-a2d9-4ad0-9348-eb12579833a4" />
 
 
 ## 🚀 Getting Started
